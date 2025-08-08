@@ -8,12 +8,12 @@ import Footer from './components/Footer'
 function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100">
-      <Header />
-      <Hero />
-      <DescriptionAndHistory />
-      <AuthorSection />
-      <CallToAction />
-      <Footer />
+      <div className="fade-in-1"><Header /></div>
+      <div className="fade-in-2"><Hero /></div>
+      <div className="fade-in-3"><DescriptionAndHistory /></div>
+      <div className="fade-in-4"><AuthorSection /></div>
+      <div className="fade-in-5"><CallToAction /></div>
+      <div className="fade-in-6"><Footer /></div>
     </div>
   )
 }
