@@ -5,13 +5,13 @@ export default function DescriptionAndHistory() {
       className="container mx-auto px-4 py-20 bg-white/60 backdrop-blur-sm"
       >
 
-      <h1 className="text-center text-[36px] text-gray-700">Discover the Magic of Boca Grande from A to Z!</h1>
-      <div className="flex flex-wrap md:flex-nowrap pt-[32px] justify-center">
-        <div className="">
+      <h1 className="text-center text-2xl md:text-4xl text-gray-700">Discover the Magic of Boca Grande from A to Z!</h1>
+      <div className="flex flex-wrap lg:flex-nowrap pt-[32px] justify-center">
+        <div className="flex">
           <img 
             src="/boca-grande/map.png" 
             alt="B is For Boca book cover" 
-            className="fade-edges"
+            className="fade-edges object-cover"
           />
         </div>
         <div className="p-0 pt-4 sm:p-8 sm:pt-0 text-justify md:text-start">

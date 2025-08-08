@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import AuthorSection from './components/AuthorSection'
 import CallToAction from './components/CallToAction'
 import DescriptionAndHistory from './components/DescriptionAndHistory'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <DescriptionAndHistory />
       <AuthorSection />
       <CallToAction />
+      <Footer />
     </div>
   )
 }
