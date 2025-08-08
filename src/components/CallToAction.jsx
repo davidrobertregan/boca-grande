@@ -4,7 +4,6 @@ export default function CallToAction() {
   const buttonRef = useRef(null);
 
   const handleClick = () => {
-    console.log("Call to Action clicked");
     if (buttonRef.current) {
       buttonRef.current.style.animation = 'wiggle 0.5s ease-in-out';
       setTimeout(() => {
@@ -38,7 +37,7 @@ export default function CallToAction() {
         </div>
         <div className="hidden lg:block">
           <img 
-            src="/boca-grande/public/3dbocagrande_01.png" 
+            src="/boca-grande/3dbocagrande_01.png" 
             alt="Call to Action Image" 
             className="mt-8 max-w-full h-auto lg:h-[80%] transition-transform duration-300 hover:scale-110 cursor-pointer"
             onClick={handleClick}
