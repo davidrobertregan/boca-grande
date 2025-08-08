@@ -16,6 +16,10 @@
   html {
     scroll-behavior: smooth;
   }
+
+  section {
+    scroll-margin-top: 120px;
+  }
   
   a {
     text-decoration: none;
@@ -41,5 +45,11 @@
                         linear-gradient(to bottom, transparent 0%, black 8%, black 92%, transparent 100%);
     mask-composite: intersect;
     -webkit-mask-composite: source-in;
+  }
+
+  @keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg) scale(1.1); }
+    75% { transform: rotate(5deg) scale(1.1); }
   }
 }

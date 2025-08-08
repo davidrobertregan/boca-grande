@@ -1,14 +1,29 @@
 export default function Hero() {
+
+  const onMouseOver = (e) => {
+    console.log("mouse over", e.target);
+  }
+
+  const onClick = (e) => {
+    e.target.style.animation = 'wiggle 0.5s ease-in-out';
+    setTimeout(() => {
+      e.target.style.animation = '';
+    }, 500);
+  }
+
   return (
     <section id="history" className="mx-auto px-4 py-20 text-center backdrop-blur-sm pt-8">
       <div className="flex justify-around flex-wrap lg:flex-nowrap">
-        <div className="order-1 pt-8 lg:order-0 lg:pt-0 flex flex-col justify-center items-center max-w-[500px] ml-[32px]">
+        <div className="order-1 pt-8 lg:order-0 lg:pt-0 flex flex-col justify-center items-center max-w-[500px]">
           {/* CTA with Chico Image */}
           <div>
-          <div className="hidden lg:block">
+          <div id="chicoCart" className="hidden lg:block">
             <img 
               src="/boca-grande/chico-cart.png" 
               alt="B is For Boca book cover" 
+              onMouseOver={onMouseOver}
+              onClick={onClick}
+              className="transition-transform duration-300 hover:scale-110 hover:rotate-2 cursor-pointer"
             />
           </div>
           <p className="text-center italic">"Join <b>Chico the cheeky monkey</b> as he explores Boca Grande, Florida from A to Z..."</p>
@@ -28,7 +43,7 @@ export default function Hero() {
           </a>
         </div>
           {/* Book Cover Image */}
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center lg:justify-end items-center">
           <img 
             src="/boca-grande/b-is-for-boca-screenshot.png" 
             alt="B is For Boca book cover" 
