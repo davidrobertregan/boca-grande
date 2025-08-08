@@ -1,7 +1,9 @@
 export default function AuthorSection() {
   return (
-    <section id="author" className="bg-white/60 backdrop-blur-sm h-[250px] p-[48px]">
-      <div>
+    <section 
+      id="author" 
+      className="container mx-auto px-4 py-20 backdrop-blur-sm">
+      <div className="p-0 pt-4 md:p-8 sm:pt-0 text-justify md:text-start">
         <h1>About the Author</h1>
         <p>
           Julie Horning is a real estate agent, proud mother and grandmother, and former leader in the direct selling world, where she built teams and empowered women. 
