@@ -19,7 +19,7 @@ export default function Hero() {
           <div>
           <div id="chicoCart" className="hidden lg:block">
             <img 
-              src="/boca-grande/chico-cart.png" 
+              src="/chico-cart.png" 
               alt="B is For Boca book cover" 
               onMouseOver={onMouseOver}
               onClick={onClick}
@@ -45,7 +45,7 @@ export default function Hero() {
           {/* Book Cover Image */}
         <div className="flex justify-center lg:justify-end items-center">
           <img 
-            src="/boca-grande/b-is-for-boca-screenshot.png" 
+            src="/b-is-for-boca-screenshot.png" 
             alt="B is For Boca book cover" 
             className="fade-edges max-w-[100%] md:max-w-[85%]"
           />

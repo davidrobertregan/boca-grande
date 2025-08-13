@@ -37,7 +37,7 @@ export default function CallToAction() {
         </div>
         <div className="hidden lg:block">
           <img 
-            src="/boca-grande/3dbocagrande_01.png" 
+            src="/3dbocagrande_01.png" 
             alt="Call to Action Image" 
             className="mt-8 max-w-full h-auto lg:h-[80%] transition-transform duration-300 hover:scale-110 cursor-pointer"
             onClick={handleClick}

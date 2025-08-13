@@ -9,7 +9,7 @@ export default function AuthorSection() {
         <div>
           <img 
 
-            src="/boca-grande/author.png" 
+            src="/author.png" 
             alt="Julie Horning, Author of B is For Boca" 
             className="rounded-2xl mx-auto h-96 lg:h-[85%]"
           />

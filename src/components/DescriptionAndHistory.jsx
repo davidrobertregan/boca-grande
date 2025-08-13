@@ -9,7 +9,7 @@ export default function DescriptionAndHistory() {
       <div className="flex flex-wrap lg:flex-nowrap pt-[32px] justify-center">
         <div className="flex">
           <img 
-            src="/boca-grande/map.png" 
+            src="/map.png" 
             alt="B is For Boca book cover" 
             className="fade-edges object-cover"
           />
