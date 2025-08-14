@@ -73,4 +73,9 @@
   .-rotate-6 { rotate: -6deg; }
   .-rotate-12 { rotate: -12deg; }
   .-rotate-15 { rotate: -15deg; }
+
+  /* Popup fade-in animation */
+  .fade-in {
+    animation: fadeIn 0.5s ease-out;
+  }
 }

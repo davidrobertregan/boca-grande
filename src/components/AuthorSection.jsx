@@ -2,7 +2,7 @@ export default function AuthorSection() {
   return (
     <section 
       id="author" 
-      className="container mx-auto px-4 py-20 backdrop-blur-sm">
+      className="container mx-auto px-4 py-20 backdrop-blur-sm relative">
       <div className="p-0 pt-4 md:p-8 sm:pt-0 text-justify md:text-start block md:flex md:flex-col">
         <h1 className="text-center text-2xl md:text-4xl w-full">Meet Julie Horning</h1>
         <div className="flex justify-center flex-wrap lg:flex-nowrap pt-8">
@@ -23,6 +23,15 @@ export default function AuthorSection() {
         </p>
         </div>
       </div>
+      {/* Gator Sticker */}
+      <img
+        src="gator.png" 
+        alt="Gator Sticker"
+        className="absolute object-contain z-10 right-[29%] 
+          m-auto w-40 h-40 top-[-75px]
+          md:m-0 md:w-50 md:h-50 md:top-[-115px] md:right-0
+          lg:w-65 lg:h-65"
+      />
     </section>
   )
 }

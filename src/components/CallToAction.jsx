@@ -15,7 +15,7 @@ export default function CallToAction() {
   }
 
   return (
-    <section className="container mx-auto px-4 py-20 lg:pt-0 bg-white/60 backdrop-blur-sm">
+    <section className="container mx-auto px-4 py-20 lg:pt-0 bg-white/60 backdrop-blur-sm relative">
       <div className="flex justify-center items-center flex-col lg:flex-row">
         <div>
           <h2 className="text-2xl md:text-4xl text-gray-700">Ready to Explore Boca Grande?</h2>
@@ -39,11 +39,21 @@ export default function CallToAction() {
           <img 
             src="/3dbocagrande_01.png" 
             alt="Call to Action Image" 
-            className="mt-8 max-w-full h-auto lg:h-[80%] transition-transform duration-300 hover:scale-110 cursor-pointer"
+            className="mt-8 max-w-full h-auto lg:h-[80%]"
             onClick={handleClick}
           />
         </div>
       </div>
+        {/* Chicken Sticker */}
+      <img
+        src="chicken.png" 
+        alt="Chicken Sticker"
+        className="absolute object-contain z-10 right-[-1px] m-auto
+          z-10 left-[-1px]
+          w-60 h-60 top-[-130px]
+          md:w-75 md:h-75 md:top-[-180px] md:rotate-[-20deg] md:m-0
+          lg:w-100 lg:h-100"
+      />
     </section>
   )
 }
