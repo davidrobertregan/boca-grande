@@ -1,9 +1,4 @@
 export default function Hero() {
-
-  const onMouseOver = (e) => {
-    console.log("mouse over", e.target);
-  }
-
   const onClick = (e) => {
     e.target.style.animation = 'wiggle 0.5s ease-in-out';
     setTimeout(() => {
@@ -21,7 +16,6 @@ export default function Hero() {
             <img 
               src="/chico-cart.png" 
               alt="B is For Boca book cover" 
-              onMouseOver={onMouseOver}
               onClick={onClick}
               className="transition-transform duration-300 hover:scale-110 hover:rotate-2 cursor-pointer"
             />

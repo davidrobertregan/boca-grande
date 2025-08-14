@@ -39,7 +39,7 @@ export default function CallToAction() {
           <img 
             src="/3dbocagrande_01.png" 
             alt="Call to Action Image" 
-            className="mt-8 max-w-full h-auto lg:h-[80%]"
+            className="mt-8 max-w-full h-auto"
             onClick={handleClick}
           />
         </div>
