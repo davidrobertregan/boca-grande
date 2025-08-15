@@ -41,6 +41,7 @@ export default function CallToAction() {
             alt="Call to Action Image" 
             className="mt-8 max-w-full h-auto"
             onClick={handleClick}
+            loading="lazy"
           />
         </div>
       </div>
@@ -53,6 +54,7 @@ export default function CallToAction() {
           w-60 h-60 top-[-130px]
           md:w-75 md:h-75 md:top-[-180px] md:rotate-[-20deg] md:m-0
           lg:w-100 lg:h-100"
+        loading="lazy"
       />
     </section>
   )

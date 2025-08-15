@@ -8,10 +8,10 @@ export default function AuthorSection() {
         <div className="flex justify-center flex-wrap lg:flex-nowrap pt-8">
         <div>
           <img 
-
             src="/author.png" 
             alt="Julie Horning, Author of B is For Boca" 
             className="rounded-2xl mx-auto h-96 lg:h-auto"
+            loading="lazy"
           />
         </div>
         <p className="p-4 sm:p-8 lg:pt-0">
@@ -31,6 +31,7 @@ export default function AuthorSection() {
           m-auto w-40 h-40 top-[-75px]
           md:m-0 md:w-50 md:h-50 md:top-[-115px] md:right-0
           lg:w-65 lg:h-65"
+        loading="lazy"
       />
     </section>
   )
