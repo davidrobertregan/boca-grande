@@ -5,7 +5,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo/Title */}
           <div className="text-2xl font-bold text-purple-800">
-            <img src="/b-is-for-boca-text.png" alt="B is For Boca" className="h-[86px]" />
+            <img src="/b-is-for-boca-text.png" alt="B is For Boca" className="h-[86px]" loading="eager" />
           </div>
           
           {/* Navigation Links */}

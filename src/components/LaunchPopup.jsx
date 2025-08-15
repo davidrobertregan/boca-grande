@@ -47,6 +47,7 @@ export default function LaunchPopup() {
               src="/3dbocagrande_01.png" 
               alt="B is For Boca Grande Book Cover" 
               className="max-w-full object-contain"
+              loading="lazy"
             />
           </div>
 

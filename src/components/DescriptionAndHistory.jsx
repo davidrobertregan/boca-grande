@@ -12,6 +12,7 @@ export default function DescriptionAndHistory() {
             src="/map.png" 
             alt="B is For Boca book cover" 
             className="fade-edges object-cover"
+            loading="lazy"
           />
         </div>
         <div className="p-4 sm:p-8 lg:pt-0 text-justify md:text-start">

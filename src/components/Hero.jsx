@@ -18,6 +18,7 @@ export default function Hero() {
               alt="B is For Boca book cover" 
               onClick={onClick}
               className="transition-transform duration-300 hover:scale-110 hover:rotate-2 cursor-pointer"
+              loading="eager"
             />
           </div>
           <p className="text-center italic">"Join <b>Chico the cheeky monkey</b> as he explores Boca Grande, Florida from A to Z..."</p>
@@ -42,6 +43,7 @@ export default function Hero() {
             src="/b-is-for-boca-screenshot.png" 
             alt="B is For Boca book cover" 
             className="fade-edges max-w-[100%] md:max-w-[85%]"
+            loading="eager"
           />
         </div>
       </div>
