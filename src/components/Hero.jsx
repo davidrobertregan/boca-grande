@@ -26,7 +26,7 @@ export default function Hero() {
             href="https://www.amazon.com/dp/B0FMKQLH61" 
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full h-[48px] w-[250px] mt-[32px] bg-gradient-to-r flex items-center justify-center text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover:from-orange-500 hover:via-pink-600 hover:to-teal-500"
+            className="rounded-full h-[48px] w-full md:w-[250px] mt-[32px] bg-gradient-to-r flex items-center justify-center text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover:from-orange-500 hover:via-pink-600 hover:to-teal-500"
             style={{
               background: 'linear-gradient(90deg, #10b981, #06b6d4, #2dd4bf)',
               backgroundSize: '100% 100%',
