@@ -23,7 +23,7 @@ export default function Header() {
               Learn More
             </a>
             <a 
-              href="https://amazon.com" 
+              href="https://amazon.com/dp/B0FMKQLH61" 
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white text-teal-600 border-2 border-teal-400 hover:bg-blue px-8 py-4 rounded-full font-bold shadow-lg transform hover:scale-105 transition-all duration-300"

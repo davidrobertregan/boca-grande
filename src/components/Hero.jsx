@@ -18,16 +18,15 @@ export default function Hero() {
               alt="B is For Boca book cover" 
               onClick={onClick}
               className="transition-transform duration-300 hover:scale-110 hover:rotate-2 cursor-pointer"
-              loading="eager"
             />
           </div>
           <p className="text-center italic">"Join <b>Chico the cheeky monkey</b> as he explores Boca Grande, Florida from A to Z..."</p>
           </div>
           <a 
-            href="https://amazon.com" 
+            href="https://www.amazon.com/dp/B0FMKQLH61" 
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full h-[48px] w-[250px] mt-[32px] bg-gradient-to-r flex items-center justify-center text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover:from-orange-500 hover:via-pink-600 hover:to-teal-500"
+            className="rounded-full h-[48px] w-full md:w-[250px] mt-[32px] bg-gradient-to-r flex items-center justify-center text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover:from-orange-500 hover:via-pink-600 hover:to-teal-500"
             style={{
               background: 'linear-gradient(90deg, #10b981, #06b6d4, #2dd4bf)',
               backgroundSize: '100% 100%',
@@ -43,7 +42,6 @@ export default function Hero() {
             src="/b-is-for-boca-screenshot.png" 
             alt="B is For Boca book cover" 
             className="fade-edges max-w-[100%] md:max-w-[85%]"
-            loading="eager"
           />
         </div>
       </div>
