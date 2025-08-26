@@ -23,7 +23,7 @@ export default function Hero() {
           <p className="text-center italic">"Join <b>Chico the cheeky monkey</b> as he explores Boca Grande, Florida from A to Z..."</p>
           </div>
           <a 
-            href="https://www.amazon.com/dp/B0FMKQLH61" 
+            href="https://shop.ingramspark.com/b/084?params=oo8PKNc9xXuu81DRQx00gYH6gWlLtWtYFTT4BDEPWwA" 
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full h-[48px] w-full md:w-[250px] mt-[32px] bg-gradient-to-r flex items-center justify-center text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover:from-orange-500 hover:via-pink-600 hover:to-teal-500"

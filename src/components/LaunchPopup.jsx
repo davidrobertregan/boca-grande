@@ -54,17 +54,17 @@ export default function LaunchPopup() {
           {/* Text Side */}
           <div className="md:w-1/2 p-6 md:p-8">
             <h2 className="text-2xl md:text-3xl font-bold text-purple-800 mb-4">
-              🏝️ Launch Day is Here!
+              🏝️ Available Now!
             </h2>
             
             <div className="space-y-4 text-gray-700">
               <p>
-                After a year of love and hard work, <span className='whitespace-nowrap'><strong>B is for Boca Grande</strong></span> is available on Amazon
+                After a year of love and hard work, <span className='whitespace-nowrap'><strong>B is for Boca Grande</strong></span> is available
                 <span className="text-lg"> 🏝️🌅</span>
               </p>
               
               <p className="text-teal-600 font-semibold">
-                (just $0.99 for the eBook on launch day!)
+                An International Bestseller!
               </p>
 
               <p>
@@ -72,7 +72,7 @@ export default function LaunchPopup() {
               </p>
 
               <ul className="space-y-2 ml-4">
-                <li>🌴 Grab the eBook on launch day</li>
+                <li>🌴 Grab a copy</li>
                 <li>📖 Read & enjoy</li>
                 <li>⭐ Leave a review to share the magic!</li>
               </ul>
@@ -82,7 +82,7 @@ export default function LaunchPopup() {
               </p>
 
               <a 
-                href="https://www.amazon.com/dp/B0FMKQLH61" 
+                href="https://shop.ingramspark.com/b/084?params=oo8PKNc9xXuu81DRQx00gYH6gWlLtWtYFTT4BDEPWwA" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex w-full justify-center bg-gradient-to-r from-orange-500 via-pink-600 to-teal-500 text-white px-6 py-3 rounded-full font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 mt-4"
