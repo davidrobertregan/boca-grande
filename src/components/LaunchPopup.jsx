@@ -82,7 +82,7 @@ export default function LaunchPopup() {
               </p>
 
               <a 
-                href="https://shop.ingramspark.com/b/084?params=oo8PKNc9xXuu81DRQx00gYH6gWlLtWtYFTT4BDEPWwA" 
+                href="https://shop.ingramspark.com/b/084?params=uzwiUAGaIrE3rlIGGG3Kp3QksY07FXDRvF7r26SMqmp" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex w-full justify-center bg-gradient-to-r from-orange-500 via-pink-600 to-teal-500 text-white px-6 py-3 rounded-full font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 mt-4"
