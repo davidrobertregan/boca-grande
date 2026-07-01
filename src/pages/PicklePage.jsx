@@ -4,6 +4,7 @@ import AuthorSection from '../components/AuthorSection'
 import CallToAction from '../components/CallToAction'
 import DescriptionAndHistory from '../components/DescriptionAndHistory'
 import Footer from '../components/Footer'
+import usePageTitle from '../hooks/usePageTitle'
 import { books } from '../data/books'
 import { author, bioWithMiddle } from '../data/author'
 
@@ -11,6 +12,7 @@ const book = books.pickleball
 const bioHtml = bioWithMiddle(book.authorMiddleHtml)
 
 export default function PicklePage() {
+  usePageTitle(book.documentTitle)
   return (
     <div className={`min-h-screen ${book.theme.pageBg} fade-container`}>
       <Header book={book} />

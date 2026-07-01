@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Footer from '../components/Footer'
+import usePageTitle from '../hooks/usePageTitle'
 import { author } from '../data/author'
 import { books } from '../data/books'
 
@@ -34,6 +35,7 @@ function BookCard({ book }) {
 }
 
 export default function Home() {
+  usePageTitle('Julie Horning — Children\'s Book Author')
   return (
     <div className="min-h-screen bg-gradient-to-br from-amber-50 via-white to-sky-50 flex flex-col">
       {/* Nav */}
