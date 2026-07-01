@@ -6,9 +6,10 @@ import DescriptionAndHistory from '../components/DescriptionAndHistory'
 import Footer from '../components/Footer'
 import LaunchPopup from '../components/LaunchPopup'
 import { books } from '../data/books'
-import { author } from '../data/author'
+import { author, bioWithMiddle } from '../data/author'
 
 const book = books.boca
+const bioHtml = bioWithMiddle(book.authorMiddleHtml)
 
 export default function BocaPage() {
   return (
@@ -17,7 +18,7 @@ export default function BocaPage() {
         <Header book={book} />
         <Hero book={book} />
         <DescriptionAndHistory book={book} />
-        <AuthorSection author={author} stickers={book.stickers} />
+        <AuthorSection author={author} stickers={book.stickers} bioHtml={bioHtml} />
         <CallToAction book={book} />
         <Footer author={author} footerText={book.footerText} />
       </div>

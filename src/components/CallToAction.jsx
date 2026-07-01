@@ -41,7 +41,7 @@ export default function CallToAction({ book }) {
           <img
             src={cta.img}
             alt={cta.imgAlt}
-            className="mt-8 max-w-full h-auto"
+            className={cta.imgClass ?? 'mt-8 max-w-full h-auto'}
             onClick={handleClick}
             loading="lazy"
           />

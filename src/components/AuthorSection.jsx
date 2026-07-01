@@ -1,5 +1,6 @@
-export default function AuthorSection({ author, stickers = [] }) {
+export default function AuthorSection({ author, stickers = [], bioHtml }) {
   const authorStickers = stickers.filter((s) => s.section === 'author')
+  const text = bioHtml ?? author.bioHtml
 
   return (
     <section
@@ -16,7 +17,7 @@ export default function AuthorSection({ author, stickers = [] }) {
             loading="lazy"
           />
         </div>
-        <p className="p-4 sm:p-8 lg:pt-0" dangerouslySetInnerHTML={{ __html: author.bioHtml }} />
+        <p className="p-4 sm:p-8 lg:pt-0" dangerouslySetInnerHTML={{ __html: text }} />
         </div>
       </div>
       {authorStickers.map((s) => (

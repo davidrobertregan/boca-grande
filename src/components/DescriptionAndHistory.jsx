@@ -13,7 +13,7 @@ export default function DescriptionAndHistory({ book }) {
           <img
             src={description.img}
             alt={description.imgAlt}
-            className="fade-edges object-cover"
+            className={description.imgClass ?? 'fade-edges object-cover'}
             loading="lazy"
           />
         </div>

@@ -10,7 +10,7 @@ export default function Hero({ book }) {
 
   return (
     <section id="history" className="mx-auto px-4 py-20 text-center backdrop-blur-sm pt-8">
-      <div className="flex justify-around flex-wrap lg:flex-nowrap">
+      <div className={hero.rowClass ?? 'flex justify-around flex-wrap lg:flex-nowrap'}>
         <div className="order-1 pt-8 lg:order-0 lg:pt-0 flex flex-col justify-center items-center max-w-[500px]">
           {/* CTA with cart image */}
           <div>
@@ -19,7 +19,7 @@ export default function Hero({ book }) {
               src={hero.cartImg}
               alt={hero.cartAlt}
               onClick={onClick}
-              className="transition-transform duration-300 hover:scale-110 hover:rotate-2 cursor-pointer"
+              className={`transition-transform duration-300 hover:scale-110 hover:rotate-2 cursor-pointer ${hero.cartImgClass ?? ''}`}
             />
           </div>
           <p className="text-center italic" dangerouslySetInnerHTML={{ __html: hero.taglineHtml }} />
@@ -39,11 +39,11 @@ export default function Hero({ book }) {
           </a>
         </div>
           {/* Book Cover Image */}
-        <div className="flex justify-center lg:justify-end items-center">
+        <div className={hero.coverWrapClass ?? 'flex justify-center lg:justify-end items-center'}>
           <img
             src={hero.coverImg}
             alt={hero.coverAlt}
-            className="fade-edges max-w-[100%] md:max-w-[85%]"
+            className={hero.coverImgClass ?? 'fade-edges max-w-[100%] md:max-w-[85%]'}
           />
         </div>
       </div>

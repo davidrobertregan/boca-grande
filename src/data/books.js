@@ -56,6 +56,9 @@ export const books = {
       buyLabel: 'Buy Now',
     },
 
+    // Middle bio paragraph (why she wrote this book); slots into the shared bio.
+    authorMiddleHtml: `Inspired by her love for Boca Grande, a charming town on Gasparilla Island, she wrote "B is for Boca Grande", a children's alphabet book celebrating its beauty and history.`,
+
     description: {
       heading: 'Discover the Magic of Boca Grande from A to Z!',
       img: '/map.png',
@@ -106,12 +109,13 @@ export const books = {
     footerText: 'B is for Boca Grande',
   },
 
-  // ---- Pickleball: placeholder content, filled in step 4 ----
+  // ---- Pickleball ----
+  // NOTE: copy is first-draft placeholder; title art + real buy link still TODO.
   pickleball: {
     slug: 'pickleball',
     path: '/pickleball',
     shortTitle: 'P is for Pickleball',
-    logoImg: null, // no title art yet
+    logoImg: null, // TODO: dedicated title/logo art; text fallback for now
     logoAlt: 'P is For Pickleball',
     logoTextFallback: 'P is for Pickleball',
     documentTitle: 'P is for Pickleball',
@@ -120,27 +124,28 @@ export const books = {
     card: {
       cover: '/pickleball-cover.jpeg',
       blurb:
-        'A playful A-to-Z pickleball adventure for young players and their families.',
+        'A playful A-to-Z pickleball adventure with a troop of lovable jungle friends.',
       ctaLabel: 'Explore the book',
-      accent: 'text-green-700',
-      accentBorder: 'border-green-500',
-      accentBg: 'bg-green-600',
+      accent: 'text-teal-600',
+      accentBorder: 'border-teal-400',
+      accentBg: 'bg-teal-500',
     },
 
+    // Sunny court palette: gold/yellow, teal paddle, court blue.
     theme: {
-      pageBg: 'bg-gradient-to-br from-lime-100 via-green-50 to-yellow-100',
-      navText: 'text-green-800',
-      navHover: 'hover:text-yellow-600',
-      logoText: 'text-green-800',
-      buyBorder: 'border-green-500',
-      buyText: 'text-green-700',
-      buyGradient: 'linear-gradient(90deg, #16a34a, #65a30d, #facc15)',
-      buyHover: 'hover:from-green-600 hover:via-lime-600 hover:to-yellow-500',
+      pageBg: 'bg-gradient-to-br from-amber-100 via-yellow-50 to-sky-100',
+      navText: 'text-teal-700',
+      navHover: 'hover:text-amber-500',
+      logoText: 'text-teal-700',
+      buyBorder: 'border-teal-400',
+      buyText: 'text-teal-600',
+      buyGradient: 'linear-gradient(90deg, #14b8a6, #38bdf8, #facc15)',
+      buyHover: 'hover:from-amber-500 hover:via-teal-500 hover:to-sky-500',
       headingColor: 'text-gray-700',
     },
 
     buyLink: '#', // TODO: real buy link
-    ctaBuyLink: '#',
+    ctaBuyLink: '#', // TODO: real buy link
 
     nav: [
       { href: '#author', label: 'About the Author' },
@@ -148,28 +153,44 @@ export const books = {
     ],
 
     hero: {
-      cartImg: '/pickleball-cover.jpeg',
-      cartAlt: 'P is For Pickleball book cover',
-      taglineHtml: '"An A to Z pickleball adventure..."', // TODO: real tagline
+      cartImg: '/motif-0.png',
+      cartAlt: 'Monkey celebrating with a pickleball paddle',
+      cartImgClass: 'max-h-72 mx-auto',
+      taglineHtml:
+        '"Join a troop of playful jungle friends as they learn pickleball from <b>A&nbsp;to&nbsp;Z</b>!"',
       coverImg: '/pickleball-cover.jpeg',
       coverAlt: 'P is For Pickleball book cover',
+      coverImgClass: 'fade-edges max-w-[85%] md:max-w-[75%] mx-auto',
+      rowClass: 'flex justify-center flex-wrap lg:flex-nowrap gap-8 lg:gap-16 max-w-6xl mx-auto',
+      coverWrapClass: 'flex justify-center items-center',
       buyLabel: 'Buy Now',
     },
 
+    // Middle bio paragraph (why she wrote this book); slots into the shared bio.
+    authorMiddleHtml: `A lover of the game, she wrote "P is for Pickleball", a children's alphabet book celebrating the sport, its lingo, and the joy of play.`,
+
     description: {
-      heading: 'Learn Pickleball from A to Z!', // TODO
-      img: '/motif-0.png',
-      imgAlt: 'P is For Pickleball illustration',
-      subheading: 'Ready to play?', // TODO
-      bodyHtml: `Placeholder description for P is for Pickleball. Real copy coming soon.`, // TODO
+      heading: 'Learn Pickleball from A to Z!',
+      img: '/motif-13.png',
+      imgAlt: 'Monkey running with a pickleball paddle',
+      imgClass: 'max-h-96 object-contain mx-auto',
+      subheading: 'Ready to hit the court?',
+      bodyHtml: `From <b>A for Ace</b> to <b>Z for Zero-Zero</b>, rally through the alphabet with a
+        cast of lovable jungle animals learning to play pickleball!
+      <br /><br />
+        Each page is packed with pickleball lingo, good sportsmanship, and giggles, making it a
+        perfect read for young players aged 4-8.
+      <br /><br />
+        <b>Can you learn every pickleball word from A to Z?</b> Grab your paddle and let's play!`,
     },
 
     cta: {
-      heading: 'Ready to Play Pickleball?', // TODO
-      text: 'Grab your paddle and dink into this A to Z adventure!', // TODO
+      heading: 'Ready to Play Pickleball?',
+      text: 'Grab your paddle and dink into this A-to-Z adventure!',
       buttonLabel: 'Get Your Copy Now',
       img: '/motif-1.png',
-      imgAlt: 'Call to Action Image',
+      imgAlt: 'Monkey with a star pickleball paddle',
+      imgClass: 'mt-8 max-h-96 w-auto mx-auto',
     },
 
     stickers: [],

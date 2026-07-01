@@ -1,11 +1,24 @@
-import { Link } from 'react-router-dom'
+import Header from '../components/Header'
+import Hero from '../components/Hero'
+import AuthorSection from '../components/AuthorSection'
+import CallToAction from '../components/CallToAction'
+import DescriptionAndHistory from '../components/DescriptionAndHistory'
+import Footer from '../components/Footer'
+import { books } from '../data/books'
+import { author, bioWithMiddle } from '../data/author'
+
+const book = books.pickleball
+const bioHtml = bioWithMiddle(book.authorMiddleHtml)
 
 export default function PicklePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-lime-100 via-green-50 to-yellow-100 flex flex-col items-center justify-center px-4 py-20 text-center">
-      <h1 className="text-3xl md:text-5xl mb-8">P is for Pickleball</h1>
-      <p className="mb-12">Coming soon.</p>
-      <Link to="/" className="text-green-700 underline">&larr; juliehorning.com</Link>
+    <div className={`min-h-screen ${book.theme.pageBg} fade-container`}>
+      <Header book={book} />
+      <Hero book={book} />
+      <DescriptionAndHistory book={book} />
+      <AuthorSection author={author} stickers={book.stickers} bioHtml={bioHtml} />
+      <CallToAction book={book} />
+      <Footer author={author} footerText={book.footerText} />
     </div>
   )
 }
