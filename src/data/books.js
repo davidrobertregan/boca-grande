@@ -166,22 +166,28 @@ export const books = {
       buyLabel: 'Buy Now',
     },
 
-    // Middle bio paragraph (why she wrote this book); slots into the shared bio.
-    authorMiddleHtml: `A lover of the game, she wrote "P is for Pickleball", a children's alphabet book celebrating the sport, its lingo, and the joy of play.`,
+    // Full author bio for this book's page (overrides the shared composed bio).
+    authorBioHtml: `<b>Julie Horning</b> is a mother, grandmother, entrepreneur, and storyteller.
+      <br /><br />
+      She began writing children's books when she couldn't find the kinds of stories she longed to
+      share with her grandchildren&mdash;stories inspired by the places, passions, and experiences
+      closest to her heart.
+      <br /><br />
+      Julie is passionate about creating meaningful books that bring generations together and
+      celebrate the power of <b>joy, friendship, and belonging</b>.`,
 
     description: {
-      heading: 'Learn Pickleball from A to Z!',
+      heading: 'More Than a Game',
       img: '/motif-13.png',
       imgAlt: 'Monkey running with a pickleball paddle',
       imgClass: 'max-h-96 object-contain mx-auto',
-      subheading: 'Ready to hit the court?',
-      bodyHtml: `From <b>A for Ace</b> to <b>Z for Zero-Zero</b>, rally through the alphabet with a
-        cast of lovable jungle animals learning to play pickleball!
+      subheading: 'Pickleball is for everyone',
+      bodyHtml: `In "P is for Pickleball", Julie celebrates much more than a game. Through playful
+        learning and vibrant illustrations, she shares the joy of pickleball and the community,
+        connection, and sense of belonging it creates.
       <br /><br />
-        Each page is packed with pickleball lingo, good sportsmanship, and giggles, making it a
-        perfect read for young players aged 4-8.
-      <br /><br />
-        <b>Can you learn every pickleball word from A to Z?</b> Grab your paddle and let's play!`,
+        Her hope is to inspire families to get out on the court, make lasting memories together, and
+        remind readers of all ages that <b>pickleball is for everyone</b>.`,
     },
 
     cta: {

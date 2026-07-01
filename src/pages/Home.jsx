@@ -74,9 +74,9 @@ export default function Home() {
       </section>
 
       {/* Books (middle) */}
-      <section id="books" className="container mx-auto px-4 py-20">
+      <section className="container mx-auto px-4 py-20">
         <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-12">My Books</h2>
-        <div className="flex flex-wrap justify-center gap-8">
+        <div id="books" className="flex flex-wrap justify-center gap-8 scroll-mt-28">
           {bookList.map((book) => (
             <BookCard key={book.slug} book={book} />
           ))}

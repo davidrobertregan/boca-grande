@@ -9,7 +9,7 @@ import { books } from '../data/books'
 import { author, bioWithMiddle } from '../data/author'
 
 const book = books.pickleball
-const bioHtml = bioWithMiddle(book.authorMiddleHtml)
+const bioHtml = book.authorBioHtml ?? bioWithMiddle(book.authorMiddleHtml)
 
 export default function PicklePage() {
   usePageTitle(book.documentTitle)
