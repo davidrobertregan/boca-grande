@@ -1,6 +1,8 @@
 import { useRef } from 'react';
 
-export default function CallToAction() {
+export default function CallToAction({ book }) {
+  const { cta, theme, ctaBuyLink, stickers = [] } = book
+  const ctaStickers = stickers.filter((s) => s.section === 'cta')
   const buttonRef = useRef(null);
 
   const handleClick = () => {
@@ -18,44 +20,36 @@ export default function CallToAction() {
     <section className="container mx-auto px-4 py-20 lg:pt-0 bg-white/60 backdrop-blur-sm relative">
       <div className="flex justify-center items-center flex-col lg:flex-row">
         <div>
-          <h2 className="text-2xl md:text-4xl text-gray-700">Ready to Explore Boca Grande?</h2>
-          <p className="mt-4">Join us on this unforgettable adventure and discover the magic of Boca Grande!</p>
-          <a 
+          <h2 className={`text-2xl md:text-4xl ${theme.headingColor}`}>{cta.heading}</h2>
+          <p className="mt-4">{cta.text}</p>
+          <a
             ref={buttonRef}
-            href="https://shop.ingramspark.com/b/084?params=oo8PKNc9xXuu81DRQx00gYH6gWlLtWtYFTT4BDEPWwA" 
+            href={ctaBuyLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full h-[48px] w-full md:w-[250px] mt-[32px] bg-gradient-to-r flex items-center justify-center text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover:from-orange-500 hover:via-pink-600 hover:to-teal-500"
+            className={`rounded-full h-[48px] w-full md:w-[250px] mt-[32px] bg-gradient-to-r flex items-center justify-center text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 ${theme.buyHover}`}
             style={{
-              background: 'linear-gradient(90deg, #10b981, #06b6d4, #2dd4bf)',
+              background: theme.buyGradient,
               backgroundSize: '100% 100%',
               fontWeight: '1000',
             }}
           >
-            Get Your Copy Now
+            {cta.buttonLabel}
           </a>
         </div>
         <div className="hidden lg:block">
-          <img 
-            src="/3dbocagrande_01.png" 
-            alt="Call to Action Image" 
+          <img
+            src={cta.img}
+            alt={cta.imgAlt}
             className="mt-8 max-w-full h-auto"
             onClick={handleClick}
             loading="lazy"
           />
         </div>
       </div>
-        {/* Chicken Sticker */}
-      <img
-        src="chicken.png" 
-        alt="Chicken Sticker"
-        className="absolute object-contain z-10 right-[-1px] m-auto
-          z-10 left-[-1px]
-          w-60 h-60 top-[-130px]
-          md:w-75 md:h-75 md:top-[-180px] md:rotate-[-20deg] md:m-0
-          lg:w-100 lg:h-100"
-        loading="lazy"
-      />
+      {ctaStickers.map((s) => (
+        <img key={s.src} src={s.src} alt={s.alt} className={s.className} loading="lazy" />
+      ))}
     </section>
   )
 }

@@ -5,17 +5,21 @@ import CallToAction from '../components/CallToAction'
 import DescriptionAndHistory from '../components/DescriptionAndHistory'
 import Footer from '../components/Footer'
 import LaunchPopup from '../components/LaunchPopup'
+import { books } from '../data/books'
+import { author } from '../data/author'
+
+const book = books.boca
 
 export default function BocaPage() {
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100 fade-container">
-        <Header />
-        <Hero />
-        <DescriptionAndHistory />
-        <AuthorSection />
-        <CallToAction />
-        <Footer />
+      <div className={`min-h-screen ${book.theme.pageBg} fade-container`}>
+        <Header book={book} />
+        <Hero book={book} />
+        <DescriptionAndHistory book={book} />
+        <AuthorSection author={author} stickers={book.stickers} />
+        <CallToAction book={book} />
+        <Footer author={author} footerText={book.footerText} />
       </div>
       <LaunchPopup />
     </>
