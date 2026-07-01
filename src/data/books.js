@@ -144,8 +144,8 @@ export const books = {
       headingColor: 'text-gray-700',
     },
 
-    buyLink: '#', // TODO: real buy link
-    ctaBuyLink: '#', // TODO: real buy link
+    buyLink: 'https://www.amazon.com/P-Pickleball-Julie-Horning/dp/1972446037/',
+    ctaBuyLink: 'https://www.amazon.com/P-Pickleball-Julie-Horning/dp/1972446037/',
 
     nav: [
       { href: '#author', label: 'About the Author' },
@@ -193,7 +193,27 @@ export const books = {
       imgClass: 'mt-8 max-h-96 w-auto mx-auto',
     },
 
-    stickers: [],
+    stickers: [
+      {
+        src: '/motif-9.png',
+        alt: 'Dog with a pickleball paddle',
+        section: 'author',
+        className: `absolute object-contain z-10 right-[29%]
+          m-auto w-40 h-40 top-[-75px]
+          md:m-0 md:w-50 md:h-50 md:top-[-115px] md:right-0
+          lg:w-65 lg:h-65`,
+      },
+      {
+        src: '/motif-8.png',
+        alt: 'Turtle with a pickleball paddle',
+        section: 'cta',
+        className: `absolute object-contain z-10 m-auto
+          left-[-10px] bottom-[-55px]
+          w-32 h-32
+          md:w-44 md:h-44 md:left-[-10px] md:bottom-[-80px] md:rotate-[8deg] md:m-0
+          lg:w-56 lg:h-56`,
+      },
+    ],
 
     footerText: 'P is for Pickleball',
   },

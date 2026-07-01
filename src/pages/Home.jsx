@@ -55,30 +55,49 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* Author intro */}
-      <section className="container mx-auto px-4 py-16 md:py-24">
-        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
-          <img
-            src={author.photo}
-            alt={author.name}
-            className="rounded-3xl shadow-xl h-72 w-72 md:h-96 md:w-96 object-cover shrink-0"
-            loading="eager"
-          />
-          <div className="text-center lg:text-left">
-            <p className="text-teal-600 font-semibold tracking-wide uppercase text-sm">Children's Book Author</p>
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mt-2">{author.name}</h1>
-            <p className="mt-6 text-lg text-gray-600 max-w-xl" dangerouslySetInnerHTML={{ __html: author.bioHtml }} />
-          </div>
+      {/* Hero */}
+      <section className="bg-gradient-to-b from-teal-100 to-teal-50">
+        <div className="container mx-auto px-4 py-20 md:py-28 text-center">
+          <p className="text-teal-600 font-semibold tracking-widest uppercase text-sm">Children's Book Author</p>
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mt-3">{author.name}</h1>
+          <p className="mt-6 text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto">
+            Playful picture books that turn the alphabet into an adventure &mdash; from the beaches of
+            Boca Grande to the pickleball court.
+          </p>
+          <a
+            href="#books"
+            className="mt-10 inline-block px-8 py-4 rounded-full bg-teal-500 text-white font-bold shadow-lg hover:bg-teal-600 hover:scale-105 transition-all duration-300"
+          >
+            Explore the books
+          </a>
         </div>
       </section>
 
-      {/* Books */}
-      <section className="container mx-auto px-4 pb-20">
+      {/* Books (middle) */}
+      <section id="books" className="container mx-auto px-4 py-20">
         <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-12">My Books</h2>
         <div className="flex flex-wrap justify-center gap-8">
           {bookList.map((book) => (
             <BookCard key={book.slug} book={book} />
           ))}
+        </div>
+      </section>
+
+      {/* Author bio (bottom) */}
+      <section className="bg-gradient-to-b from-teal-50 to-teal-100">
+        <div className="container mx-auto px-4 py-16 md:py-24">
+          <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-12">Meet the Author</h2>
+          <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+            <img
+              src={author.photo}
+              alt={author.name}
+              className="rounded-3xl shadow-xl h-72 w-72 md:h-96 md:w-96 object-cover shrink-0"
+              loading="lazy"
+            />
+            <div className="text-center lg:text-left">
+              <p className="text-lg text-gray-600 max-w-xl" dangerouslySetInnerHTML={{ __html: author.bioHtml }} />
+            </div>
+          </div>
         </div>
       </section>
 
