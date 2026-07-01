@@ -10,6 +10,17 @@ export const books = {
     logoAlt: 'B is For Boca',
     documentTitle: 'B is for Boca Grande',
 
+    // Hub landing card
+    card: {
+      cover: '/b-is-for-boca-screenshot.png',
+      blurb:
+        'An A-to-Z alphabet adventure through Boca Grande, Florida, with Chico the cheeky monkey.',
+      ctaLabel: 'Explore the book',
+      accent: 'text-teal-600',
+      accentBorder: 'border-teal-400',
+      accentBg: 'bg-teal-500',
+    },
+
     // Tailwind classes / inline gradient tuned to the beach palette.
     theme: {
       pageBg: 'bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100',
@@ -104,6 +115,17 @@ export const books = {
     logoAlt: 'P is For Pickleball',
     logoTextFallback: 'P is for Pickleball',
     documentTitle: 'P is for Pickleball',
+
+    // Hub landing card
+    card: {
+      cover: '/pickleball-cover.jpeg',
+      blurb:
+        'A playful A-to-Z pickleball adventure for young players and their families.',
+      ctaLabel: 'Explore the book',
+      accent: 'text-green-700',
+      accentBorder: 'border-green-500',
+      accentBg: 'bg-green-600',
+    },
 
     theme: {
       pageBg: 'bg-gradient-to-br from-lime-100 via-green-50 to-yellow-100',
