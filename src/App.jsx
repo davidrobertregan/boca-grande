@@ -1,23 +1,18 @@
-import Header from './components/Header'
-import Hero from './components/Hero'
-import AuthorSection from './components/AuthorSection'
-import CallToAction from './components/CallToAction'
-import DescriptionAndHistory from './components/DescriptionAndHistory'
-import Footer from './components/Footer'
-import LaunchPopup from './components/LaunchPopup'
+import { Routes, Route } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
+import Home from './pages/Home'
+import BocaPage from './pages/BocaPage'
+import PicklePage from './pages/PicklePage'
 
 function App() {
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100 fade-container">
-        <Header />
-        <Hero />
-        <DescriptionAndHistory />
-        <AuthorSection />
-        <CallToAction />
-        <Footer />
-      </div>
-      <LaunchPopup />
+    <ScrollToTop />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/boca" element={<BocaPage />} />
+      <Route path="/pickleball" element={<PicklePage />} />
+    </Routes>
     </>
   )
 }

@@ -1,0 +1,227 @@
+// Per-book content + theme. Components read everything from here so the same
+// component set renders both books with different copy, images, and colors.
+
+export const books = {
+  boca: {
+    slug: 'boca',
+    path: '/boca',
+    shortTitle: 'B is for Boca Grande',
+    logoImg: '/b-is-for-boca-text.png',
+    logoAlt: 'B is For Boca',
+    documentTitle: 'B is for Boca Grande',
+
+    // Hub landing card
+    card: {
+      cover: '/b-is-for-boca-screenshot.png',
+      blurb:
+        'An A-to-Z alphabet adventure through Boca Grande, Florida, with Chico the cheeky monkey.',
+      ctaLabel: 'Explore the book',
+      accent: 'text-teal-600',
+      accentBorder: 'border-teal-400',
+      accentBg: 'bg-teal-500',
+    },
+
+    // Tailwind classes / inline gradient tuned to the beach palette.
+    theme: {
+      pageBg: 'bg-gradient-to-br from-blue-100 via-purple-50 to-pink-100',
+      navText: 'text-purple-700',
+      navHover: 'hover:text-pink-600',
+      logoText: 'text-purple-800',
+      buyBorder: 'border-teal-400',
+      buyText: 'text-teal-600',
+      buyGradient: 'linear-gradient(90deg, #10b981, #06b6d4, #2dd4bf)',
+      buyHover:
+        'hover:from-orange-500 hover:via-pink-600 hover:to-teal-500',
+      headingColor: 'text-gray-700',
+    },
+
+    // Two IngramSpark links preserved from the original (different tracking params).
+    buyLink:
+      'https://shop.ingramspark.com/b/084?params=uzwiUAGaIrE3rlIGGG3Kp3QksY07FXDRvF7r26SMqmp',
+    ctaBuyLink:
+      'https://shop.ingramspark.com/b/084?params=oo8PKNc9xXuu81DRQx00gYH6gWlLtWtYFTT4BDEPWwA',
+
+    nav: [
+      { href: '#author', label: 'About the Author' },
+      { href: '#learn', label: 'Learn More' },
+    ],
+
+    hero: {
+      cartImg: '/chico-cart.png',
+      cartAlt: 'B is For Boca book cover',
+      taglineHtml:
+        '"Join <b>Chico the cheeky monkey</b> as he explores Boca Grande, Florida from A to Z..."',
+      coverImg: '/b-is-for-boca-screenshot.png',
+      coverAlt: 'B is For Boca book cover',
+      coverImgClass: 'fade-edges max-w-[85%] md:max-w-[75%] mx-auto',
+      buyLabel: 'Buy Now',
+    },
+
+    // Middle bio paragraph (why she wrote this book); slots into the shared bio.
+    authorMiddleHtml: `Inspired by her love for Boca Grande, a charming town on Gasparilla Island, she wrote "B is for Boca Grande", a children's alphabet book celebrating its beauty and history.`,
+
+    description: {
+      heading: 'Discover the Magic of Boca Grande from A to Z!',
+      img: '/map.png',
+      imgAlt: 'B is For Boca book cover',
+      subheading: 'Will you join Chico on an Adventure?',
+      bodyHtml: `Join Chico the cheeky monkey as he guides you through an exciting ABC adventure in Boca Grande, Florida!
+        From A for Alligator to Z for Ziggy the Pig, each page is packed with fun facts, local treasures,
+        and hidden surprises.
+      <br /><br />
+        Explore sunny beaches, spot playful dolphins, and read about the legendary pirate José Gaspar's
+        hidden treasure. With every letter, kids will uncover the wonders of this special town, making it
+        a perfect read for young explorers aged 4-8.
+      <br /><br />
+        <b>Can you find all the hidden treasures as you learn your ABCs?</b> Let the adventure begin!`,
+    },
+
+    cta: {
+      heading: 'Ready to Explore Boca Grande?',
+      text: 'Join us on this unforgettable adventure and discover the magic of Boca Grande!',
+      buttonLabel: 'Get Your Copy Now',
+      img: '/3dbocagrande_01.png',
+      imgAlt: 'Call to Action Image',
+    },
+
+    // Decorative stickers with book-specific absolute positioning.
+    stickers: [
+      {
+        src: 'gator.png',
+        alt: 'Gator Sticker',
+        section: 'author',
+        className: `absolute object-contain z-10 right-[29%]
+          m-auto w-40 h-40 top-[-75px]
+          md:m-0 md:w-50 md:h-50 md:top-[-115px] md:right-0
+          lg:w-65 lg:h-65`,
+      },
+      {
+        src: 'chicken.png',
+        alt: 'Chicken Sticker',
+        section: 'cta',
+        className: `absolute object-contain z-10 right-[-1px] m-auto
+          z-10 left-[-1px]
+          w-60 h-60 top-[-130px]
+          md:w-75 md:h-75 md:top-[-180px] md:rotate-[-20deg] md:m-0
+          lg:w-100 lg:h-100`,
+      },
+    ],
+
+    footerText: 'B is for Boca Grande',
+  },
+
+  // ---- Pickleball ----
+  // NOTE: copy is first-draft placeholder; title art + real buy link still TODO.
+  pickleball: {
+    slug: 'pickleball',
+    path: '/pickleball',
+    shortTitle: 'P is for Pickleball',
+    logoImg: null, // TODO: dedicated title/logo art; text fallback for now
+    logoAlt: 'P is For Pickleball',
+    logoTextFallback: 'P is for Pickleball',
+    documentTitle: 'P is for Pickleball',
+
+    // Hub landing card
+    card: {
+      cover: '/Pickleball-front-cover.jpg',
+      blurb:
+        'A playful A-to-Z pickleball adventure with a troop of lovable animal friends.',
+      ctaLabel: 'Explore the book',
+      accent: 'text-teal-600',
+      accentBorder: 'border-teal-400',
+      accentBg: 'bg-teal-500',
+    },
+
+    // Sunny court palette: gold/yellow, teal paddle, court blue.
+    theme: {
+      pageBg: 'bg-gradient-to-br from-amber-100 via-yellow-50 to-sky-100',
+      navText: 'text-teal-700',
+      navHover: 'hover:text-amber-500',
+      logoText: 'text-teal-700',
+      buyBorder: 'border-teal-400',
+      buyText: 'text-teal-600',
+      buyGradient: 'linear-gradient(90deg, #14b8a6, #38bdf8, #facc15)',
+      buyHover: 'hover:from-amber-500 hover:via-teal-500 hover:to-sky-500',
+      headingColor: 'text-gray-700',
+    },
+
+    buyLink: 'https://www.amazon.com/P-Pickleball-Julie-Horning/dp/1972446037/',
+    ctaBuyLink: 'https://www.amazon.com/P-Pickleball-Julie-Horning/dp/1972446037/',
+
+    nav: [
+      { href: '#author', label: 'About the Author' },
+      { href: '#learn', label: 'Learn More' },
+    ],
+
+    hero: {
+      cartImg: '/motif-0.png',
+      cartAlt: 'Monkey celebrating with a pickleball paddle',
+      cartImgClass: 'max-h-72 mx-auto',
+      taglineHtml:
+        '"Join a troop of playful animal friends as they learn pickleball from <b>A&nbsp;to&nbsp;Z</b>!"',
+      coverImg: '/Pickleball-front-cover.jpg',
+      coverAlt: 'P is For Pickleball book cover',
+      coverImgClass: 'fade-edges max-w-[85%] md:max-w-[75%] mx-auto',
+      rowClass: 'flex justify-center flex-wrap lg:flex-nowrap gap-8 lg:gap-16 max-w-6xl mx-auto',
+      coverWrapClass: 'flex justify-center items-center',
+      buyLabel: 'Buy Now',
+    },
+
+    // Full author bio for this book's page (overrides the shared composed bio).
+    authorBioHtml: `<b>Julie Horning</b> is a mother, grandmother, entrepreneur, and storyteller.
+      <br /><br />
+      She began writing children's books when she couldn't find the kinds of stories she longed to
+      share with her grandchildren&mdash;stories inspired by the places, passions, and experiences
+      closest to her heart.
+      <br /><br />
+      Julie is passionate about creating meaningful books that bring generations together and
+      celebrate the power of <b>joy, friendship, and belonging</b>.`,
+
+    description: {
+      heading: 'More Than a Game',
+      img: '/motif-13.png',
+      imgAlt: 'Monkey running with a pickleball paddle',
+      imgClass: 'max-h-96 object-contain mx-auto',
+      subheading: 'Pickleball is for everyone',
+      bodyHtml: `In "P is for Pickleball", Julie celebrates much more than a game. Through playful
+        learning and vibrant illustrations, she shares the joy of pickleball and the community,
+        connection, and sense of belonging it creates.
+      <br /><br />
+        Her hope is to inspire families to get out on the court, make lasting memories together, and
+        remind readers of all ages that <b>pickleball is for everyone</b>.`,
+    },
+
+    cta: {
+      heading: 'Ready to Play Pickleball?',
+      text: 'Grab your paddle and dink into this A-to-Z adventure!',
+      buttonLabel: 'Get Your Copy Now',
+      img: '/motif-1.png',
+      imgAlt: 'Monkey with a star pickleball paddle',
+      imgClass: 'mt-8 max-h-96 w-auto mx-auto',
+    },
+
+    stickers: [
+      {
+        src: '/motif-9.png',
+        alt: 'Dog with a pickleball paddle',
+        section: 'author',
+        className: `absolute object-contain z-10 right-[29%]
+          m-auto w-40 h-40 top-[-75px]
+          md:m-0 md:w-50 md:h-50 md:top-[-115px] md:right-0
+          lg:w-65 lg:h-65`,
+      },
+      {
+        src: '/motif-8.png',
+        alt: 'Turtle with a pickleball paddle',
+        section: 'cta',
+        className: `absolute object-contain z-10 m-auto
+          left-[-10px] bottom-[-55px]
+          w-32 h-32
+          md:w-44 md:h-44 md:left-[-10px] md:bottom-[-80px] md:rotate-[8deg] md:m-0
+          lg:w-56 lg:h-56`,
+      },
+    ],
+
+    footerText: 'P is for Pickleball',
+  },
+}

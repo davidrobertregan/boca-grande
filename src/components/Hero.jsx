@@ -1,4 +1,6 @@
-export default function Hero() {
+export default function Hero({ book }) {
+  const { hero, theme, buyLink } = book
+
   const onClick = (e) => {
     e.target.style.animation = 'wiggle 0.5s ease-in-out';
     setTimeout(() => {
@@ -8,40 +10,40 @@ export default function Hero() {
 
   return (
     <section id="history" className="mx-auto px-4 py-20 text-center backdrop-blur-sm pt-8">
-      <div className="flex justify-around flex-wrap lg:flex-nowrap">
+      <div className={hero.rowClass ?? 'flex justify-around flex-wrap lg:flex-nowrap'}>
         <div className="order-1 pt-8 lg:order-0 lg:pt-0 flex flex-col justify-center items-center max-w-[500px]">
-          {/* CTA with Chico Image */}
+          {/* CTA with cart image */}
           <div>
           <div id="chicoCart" className="hidden lg:block">
-            <img 
-              src="/chico-cart.png" 
-              alt="B is For Boca book cover" 
+            <img
+              src={hero.cartImg}
+              alt={hero.cartAlt}
               onClick={onClick}
-              className="transition-transform duration-300 hover:scale-110 hover:rotate-2 cursor-pointer"
+              className={`transition-transform duration-300 hover:scale-110 hover:rotate-2 cursor-pointer ${hero.cartImgClass ?? ''}`}
             />
           </div>
-          <p className="text-center italic">"Join <b>Chico the cheeky monkey</b> as he explores Boca Grande, Florida from A to Z..."</p>
+          <p className="text-center italic" dangerouslySetInnerHTML={{ __html: hero.taglineHtml }} />
           </div>
-          <a 
-            href="https://shop.ingramspark.com/b/084?params=uzwiUAGaIrE3rlIGGG3Kp3QksY07FXDRvF7r26SMqmp" 
+          <a
+            href={buyLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full h-[48px] w-full md:w-[250px] mt-[32px] bg-gradient-to-r flex items-center justify-center text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 hover:from-orange-500 hover:via-pink-600 hover:to-teal-500"
+            className={`rounded-full h-[48px] w-full md:w-[250px] mt-[32px] bg-gradient-to-r flex items-center justify-center text-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 ${theme.buyHover}`}
             style={{
-              background: 'linear-gradient(90deg, #10b981, #06b6d4, #2dd4bf)',
+              background: theme.buyGradient,
               backgroundSize: '100% 100%',
               fontWeight: '1000',
             }}
           >
-            Buy Now
+            {hero.buyLabel}
           </a>
         </div>
           {/* Book Cover Image */}
-        <div className="flex justify-center lg:justify-end items-center">
-          <img 
-            src="/b-is-for-boca-screenshot.png" 
-            alt="B is For Boca book cover" 
-            className="fade-edges max-w-[100%] md:max-w-[85%]"
+        <div className={hero.coverWrapClass ?? 'flex justify-center lg:justify-end items-center'}>
+          <img
+            src={hero.coverImg}
+            alt={hero.coverAlt}
+            className={hero.coverImgClass ?? 'fade-edges max-w-[100%] md:max-w-[85%]'}
           />
         </div>
       </div>
