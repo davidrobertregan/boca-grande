@@ -53,6 +53,7 @@ export const books = {
         '"Join <b>Chico the cheeky monkey</b> as he explores Boca Grande, Florida from A to Z..."',
       coverImg: '/b-is-for-boca-screenshot.png',
       coverAlt: 'B is For Boca book cover',
+      coverImgClass: 'fade-edges max-w-[85%] md:max-w-[75%] mx-auto',
       buyLabel: 'Buy Now',
     },
 
@@ -122,9 +123,9 @@ export const books = {
 
     // Hub landing card
     card: {
-      cover: '/pickleball-cover.jpeg',
+      cover: '/Pickleball-front-cover.jpg',
       blurb:
-        'A playful A-to-Z pickleball adventure with a troop of lovable jungle friends.',
+        'A playful A-to-Z pickleball adventure with a troop of lovable animal friends.',
       ctaLabel: 'Explore the book',
       accent: 'text-teal-600',
       accentBorder: 'border-teal-400',
@@ -157,8 +158,8 @@ export const books = {
       cartAlt: 'Monkey celebrating with a pickleball paddle',
       cartImgClass: 'max-h-72 mx-auto',
       taglineHtml:
-        '"Join a troop of playful jungle friends as they learn pickleball from <b>A&nbsp;to&nbsp;Z</b>!"',
-      coverImg: '/pickleball-cover.jpeg',
+        '"Join a troop of playful animal friends as they learn pickleball from <b>A&nbsp;to&nbsp;Z</b>!"',
+      coverImg: '/Pickleball-front-cover.jpg',
       coverAlt: 'P is For Pickleball book cover',
       coverImgClass: 'fade-edges max-w-[85%] md:max-w-[75%] mx-auto',
       rowClass: 'flex justify-center flex-wrap lg:flex-nowrap gap-8 lg:gap-16 max-w-6xl mx-auto',
