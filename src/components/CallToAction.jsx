@@ -17,7 +17,7 @@ export default function CallToAction({ book }) {
   }
 
   return (
-    <section className="container mx-auto px-4 py-20 lg:pt-0 bg-white/60 backdrop-blur-sm relative">
+    <section className="container mx-auto px-4 py-20 mt-8 bg-white/60 backdrop-blur-sm relative">
       <div className="flex justify-center items-center flex-col lg:flex-row">
         <div>
           <h2 className={`text-2xl md:text-4xl ${theme.headingColor}`}>{cta.heading}</h2>
