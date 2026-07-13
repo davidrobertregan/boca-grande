@@ -42,7 +42,7 @@ export const books = {
       'https://shop.ingramspark.com/b/084?params=oo8PKNc9xXuu81DRQx00gYH6gWlLtWtYFTT4BDEPWwA',
 
     nav: [
-      { href: '#author', label: 'About the Author' },
+      { href: '/#author', label: 'About the Author' },
       { href: '#learn', label: 'Learn More' },
     ],
 
@@ -149,7 +149,7 @@ export const books = {
     ctaBuyLink: 'https://www.amazon.com/P-Pickleball-Julie-Horning/dp/1972446037/',
 
     nav: [
-      { href: '#author', label: 'About the Author' },
+      { href: '/#author', label: 'About the Author' },
       { href: '#learn', label: 'Learn More' },
     ],
 
@@ -166,6 +166,10 @@ export const books = {
       coverWrapClass: 'flex justify-center items-center',
       buyLabel: 'Buy Now',
     },
+
+    // Book-specific author photo (transparent circular cutout with paddle).
+    authorPhoto: '/julie-pickle-ball.png',
+    authorPhotoClass: 'fade-edges mx-auto h-[24rem] md:h-[28rem] lg:h-[32rem] w-auto object-contain shrink-0',
 
     // Full author bio for this book's page (overrides the shared composed bio).
     authorBioHtml: `<b>Julie Horning</b> is a mother, grandmother, entrepreneur, and storyteller.

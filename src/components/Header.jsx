@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Header({ book }) {
   const { theme, nav, logoImg, logoAlt, logoTextFallback, buyLink } = book
 
@@ -16,15 +18,19 @@ export default function Header({ book }) {
 
           {/* Navigation Links */}
           <div className="flex items-center space-x-4 space-x-8 gap-[12px]">
-            {nav.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className={`hidden md:inline-block ${theme.navText} ${theme.navHover} font-medium transition-colors duration-200`}
-              >
-                {item.label}
-              </a>
-            ))}
+            {nav.map((item) => {
+              const cls = `hidden md:inline-block ${theme.navText} ${theme.navHover} font-medium transition-colors duration-200`
+              // Internal route paths use the SPA Link; on-page hash anchors stay <a>.
+              return item.href.startsWith('/') ? (
+                <Link key={item.href} to={item.href} className={cls}>
+                  {item.label}
+                </Link>
+              ) : (
+                <a key={item.href} href={item.href} className={cls}>
+                  {item.label}
+                </a>
+              )
+            })}
             <a
               href={buyLink}
               target="_blank"

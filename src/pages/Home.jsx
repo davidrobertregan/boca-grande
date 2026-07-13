@@ -84,7 +84,7 @@ export default function Home() {
       </section>
 
       {/* Author bio (bottom) */}
-      <section className="bg-gradient-to-b from-teal-50 to-teal-100">
+      <section id="author" className="scroll-mt-24 bg-gradient-to-b from-teal-50 to-teal-100">
         <div className="container mx-auto px-4 py-16 md:py-24">
           <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-12">Meet the Author</h2>
           <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
